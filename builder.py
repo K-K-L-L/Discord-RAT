@@ -43,11 +43,11 @@ with open("temp.txt", "r") as file:
 
 file_contents = file_contents.replace("{token}", f"\"{bot_token}\"").replace("{guildid}", guild_id)
 
-with open("temp2.py", "w") as file:
+with open("Client.py", "w") as file:
     file.write(file_contents)
 
-os.system("pyinstaller --onefile temp2.py")
+os.system("pyinstaller --onefile Client.py")
 
-os.remove("temp2.py")
+os.remove("Client.py")
 shutil.rmtree("build")
 os.remove("temp2.spec")
