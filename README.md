@@ -1,8 +1,10 @@
 # Discord RAT
 
 # ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) Disclaimer:
-This tool is for educational use only, the author will not be held responsible for any misuse of this tool.
-## ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) And you might get banned on Discord for using it.
+```diff
+- This tool is for educational use only, the author will not be held responsible for any misuse of this tool.
+- And you might get banned on Discord for using it.
+```
 
 # Credits
 The project is inspired by https://github.com/moom825/Discord-RAT-2.0/, huge thanks to [moom825](https://github.com/moom825).
